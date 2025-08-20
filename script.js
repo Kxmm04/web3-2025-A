@@ -99,7 +99,7 @@ $(document).ready(function () {
         $("#input2").val(null);
         $("#input3").val(null);
         $("#dateInput").val(null);
-        $("#operator").val("+");
+        $("#operator").val("เลือกตัวดำเนินการ");
     });
 
     // โหลดข้อมูลจาก Local Storage กลับมาแสดง
