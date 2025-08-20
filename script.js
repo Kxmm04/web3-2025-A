@@ -75,7 +75,7 @@ $(document).ready(function () {
         }
 
         // แสดงผลลัพธ์ในตาราง
-        let equation = `${num1}+${num2}+${num3}`;
+        let equation = `${num1}${op}${num2}+${num3}`;
         let row = `
             <tr>
               <td>${num1}</td>
@@ -89,7 +89,7 @@ $(document).ready(function () {
 
         // เก็บผลลัพธ์ใน Local Storage
         let history = JSON.parse(localStorage.getItem("calcHistory")) || [];
-        history.push({ num1, op, num2, num3, equation, result });
+        history.push({ num1,  num2, num3, equation, result });
         localStorage.setItem("calcHistory", JSON.stringify(history));
 
         // ปิด modal
@@ -108,7 +108,6 @@ $(document).ready(function () {
         let row = `
             <tr>
               <td>${item.num1}</td>
-              <td>${item.op}</td>
               <td>${item.num2}</td>
               <td>${item.num3}</td>
               <td>${item.equation}</td>
@@ -119,7 +118,7 @@ $(document).ready(function () {
     });
 });
 
-$("#clearHistory").click(function () {
+$("#btn-clear").click(function () {
     localStorage.removeItem("calcHistory");
     $("#resultTable tbody").empty();
 });
