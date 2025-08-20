@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 700px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.result-negative {
+    color: red;
+    font-weight: bold;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+#closeModal {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#dateInput {
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+}
+
+#input1,#input2 {
+    width: 42%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+#input3 {
+    width: 43%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+}
+
+#operator {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+}
+
+#btn-clear {
+    background: #dc3545;
+}
+
+
+
+
+
+
