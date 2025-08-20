@@ -115,24 +115,47 @@ td {
     background: #dc3545;
 }
 
-@media (max-width: 600px) {
+/* Responsive สำหรับหน้าจอ <=1024px */
+@media (max-width: 1024px) {
     .container {
-        padding: 12px 2vw;
-        max-width: 100vw;
+        width: 95%;
+        padding: 10px;
     }
+
+    /* Modal ปรับขนาดเต็มหน้าจอ */
     .modal-content {
-        width: 98vw;
-        max-width: 98vw;
+        width: 90%;
         margin: 20% auto;
-        padding: 16px 4vw;
+        padding: 15px;
     }
+
+
+    /* Input และ select ปรับเป็น block เต็มความกว้าง */
+    #dateInput,
+    #input1,
+    #input2,
+    #input3,
+    #operator {
+        width: 80%;
+        display: block;
+        margin: 10px 0;
+        margin-left: 30px;
+    }
+
+    /* ปุ่มปรับขนาดเต็ม */
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* ตารางปรับเล็กลง */
     table, th, td {
-        font-size: 0.95rem;
-    }
-    h2 {
-        font-size: 1.3rem;
+        font-size: 13px;
     }
 }
+
+
+
 
 
 
