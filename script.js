@@ -47,8 +47,7 @@ $(document).ready(function () {
             Swal.fire({
                 icon: "error",
                 title: "Oops...",
-                text: "วันที่ไม่ตรงกับวันปัจจุบัน!",
-                footer: '<a href="#">Why do I have this issue?</a>'
+                text: "วันที่ไม่ตรงกับวันปัจจุบัน!"
             });
             return;
         }

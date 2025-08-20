@@ -23,6 +23,7 @@ button {
     padding: 10px 20px;
     margin: 10px;
     width: 30%;
+    font-size: 15px;
     cursor: pointer;
     border: none;
     background: #007bff;
@@ -167,8 +168,13 @@ td {
 
     /* ปุ่มปรับขนาดเต็ม */
     button {
-        width: 55%;
+        width: 42%;
         margin: 10px 0;
+        font-size: 15px;
+    }
+
+    bottom#calculate {
+        width: 90%;
     }
 
     /* ตารางปรับเล็กลง */
