@@ -15,7 +15,7 @@
 
 <body>
     <div class="container">
-        <h2>โปรแกรมคำนวณ</h2>
+        <h2>โปรแกรมคำนวณ</h2> <br><br>
         <button id="openModal">กรอกข้อมูล</button>
 
         <!-- Modal -->
@@ -24,7 +24,7 @@
                 <span id="closeModal">&times;</span>
                 <h3>ใส่ตัวเลขที่ต้องการคำนวณ</h3>
 
-                <input type="date" id="dateInput">
+                <input type="text" id="dateInput" placeholder="เลือกวันที่" onfocus="(this.type='date')" onblur="(this.type='text')">
                 <input type="number" id="input1" placeholder="ตัวเลขที่ 1">
                 <input type="number" id="input2" placeholder="ตัวเลขที่ 2">
                 <select id="operator">
