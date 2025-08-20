@@ -43,10 +43,7 @@ $(document).ready(function () {
 
         // ตรวจสอบวันปัจจุบัน
         let now = new Date();
-        let year = now.getFullYear();
-        let month = String(now.getMonth() + 1).padStart(2, '0');
-        let day = String(now.getDate()).padStart(2, '0');
-        let today = `${year}-${month}-${day}`;
+        let today = now.toLocaleDateString("en-CA", { timeZone: "Asia/Bangkok" });
         if (dateInput !== today) {
             Swal.fire({
                 icon: "error",
