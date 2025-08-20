@@ -42,7 +42,7 @@ $(document).ready(function () {
         let dateInput = $("#dateInput").val();
 
         // ตรวจสอบวันปัจจุบัน
-        let today = new Date().toLocaleDateString('th-TH');
+        let today = new Date().toLocaleDateString('en-CA');
 
         if (dateInput !== today) {
             Swal.fire({
