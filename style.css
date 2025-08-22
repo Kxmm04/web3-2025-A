@@ -98,8 +98,17 @@ td {
     display: flex;
 }
 
-#input1,#input2 {
-    width: 41%;
+#input1 {
+    width: 40%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+}
+#input2 {
+    width: 42%;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
