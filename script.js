@@ -20,17 +20,12 @@ $(document).ready(function () {
     $("#closeModal").click(function () {
         $("#myModal").fadeOut();
 
-        // ปิด modal
-        $("#closeModal").click(function () {
-            $("#myModal").fadeOut();
-
-            // ลบข้อมูลที่เคยกรอกไว้
-            $("#input1").val(null);
-            $("#input2").val(null);
-            $("#input3").val(null);
-            $("#dateInput").val(null);
-            $("#operator").val("เลือกตัวดำเนินการ");
-        });
+        // ลบข้อมูลที่เคยกรอกไว้
+        $("#input1").val(null);
+        $("#input2").val(null);
+        $("#input3").val(null);
+        $("#dateInput").val(null);
+        $("#operator").val("เลือกตัวดำเนินการ");
     });
 
     // ปุ่มคำนวณ
@@ -88,7 +83,7 @@ $(document).ready(function () {
 
         // เก็บผลลัพธ์ใน Local Storage
         let history = JSON.parse(localStorage.getItem("calcHistory")) || [];
-        history.push({ num1,  num2, num3, equation, result });
+        history.push({ num1, num2, num3, equation, result });
         localStorage.setItem("calcHistory", JSON.stringify(history));
 
         // ปิด modal
