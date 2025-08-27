@@ -37,7 +37,8 @@ $(document).ready(function () {
         let dateInput = $("#dateInput").val();
 
         // ตรวจสอบวันปัจจุบัน
-        let today = new Date().toISOString().split('T')[0];
+        let now = new Date();
+        let today = now.toLocaleDateString("en-CA", { timeZone: "Asia/Bangkok" });
         if (dateInput !== today) {
             Swal.fire({
                 icon: "error",
@@ -45,7 +46,7 @@ $(document).ready(function () {
                 text: "วันที่ไม่ตรงกับวันปัจจุบัน!"
             });
             return;
-        }
+}
 
         // ตรวจสอบค่าที่กรอก
         if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
