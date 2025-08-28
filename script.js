@@ -15,7 +15,7 @@ $(document).ready(function () {
     $("#openModal").click(function () {
         $("#myModal").fadeIn();
     });
-
+ 
     // ปิด modal
     $("#closeModal").click(function () {
         $("#myModal").fadeOut();
