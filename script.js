@@ -64,7 +64,7 @@ $(document).ready(function () {
             Swal.fire({
                 icon: "error",
                 title: "Oops...",
-                text: "ไม่สามารถหารด้วยศูนย์ได้!",
+                text: "เลือกตัวดำเนินการไม่ถูกต้องหรือหารด้วยศูนย์!",
             });
             return;
         }
