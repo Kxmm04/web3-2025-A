@@ -15,7 +15,7 @@ $(document).ready(function () {
     $("#openModal").click(function () {
         $("#myModal").fadeIn();
     });
- 
+
     // ปิด modal
     $("#closeModal").click(function () {
         $("#myModal").fadeOut();
@@ -46,7 +46,7 @@ $(document).ready(function () {
                 text: "วันที่ไม่ตรงกับวันปัจจุบัน!"
             });
             return;
-}
+        }
 
         // ตรวจสอบค่าที่กรอก
         if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
@@ -111,9 +111,9 @@ $(document).ready(function () {
         `;
         $("#resultTable tbody").append(row);
     });
-});
 
-$("#btn-clear").click(function () {
-    localStorage.removeItem("calcHistory");
-    $("#resultTable tbody").empty();
+    $("#btn-clear").click(function () {
+        localStorage.removeItem("calcHistory");
+        $("#resultTable tbody").empty();
+    });
 });
